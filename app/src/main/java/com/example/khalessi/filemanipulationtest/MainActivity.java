@@ -50,6 +50,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+final Button showFileNamePath = (Button) findViewById(R.id.showFileNamePath);
+        showFileNamePath.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showFileNamePathFktn();
+            }
+        });
+
+
+    }
+
+    private void showFileNamePathFktn() {
+        String fpath = this.getFilesDir().getAbsolutePath();
+        ausgabeText.setText(fpath);
+
     }
 
     private void writeToFile (){

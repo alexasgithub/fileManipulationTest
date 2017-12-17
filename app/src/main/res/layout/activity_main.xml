@@ -18,35 +18,43 @@
 
 
     <TableLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="30sp">
-
-<TableRow>
-    <Button
-        android:id="@+id/speichern"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="10sp"
-        android:text="Text speichern"
-        />
+        android:layout_margin="30sp">
 
-    <Button
-        android:id="@+id/ausgabe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Text auslesen" />
-</TableRow>
-</TableLayout>
+        <TableRow>
+
+            <Button
+                android:id="@+id/speichern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text speichern" />
+
+            <Button
+                android:id="@+id/ausgabe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text auslesen" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/showFileNamePath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pfad auslesen" />
+        </TableRow>
+    </TableLayout>
 
     <TextView
         android:id="@+id/ausgabeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="50dp"
-        android:text="..."
-       />
-
+        android:text="..." />
 
 
 </LinearLayout>
